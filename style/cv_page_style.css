@@ -7,6 +7,7 @@
 :root {
 	--primary-color: #13c8ffa1;
 	--text-color: #7f7f7f;
+	--light-blue-color: #00c8ff;
 }
 
 html {
@@ -136,28 +137,11 @@ a {
 	text-transform: uppercase;
 }
 
-.downloadBtn {
-	display: block;
-	text-decoration: underline;
-	font-size: 1.6rem;
-	margin-top: 1rem;
-}
-
-.downloadBtn:hover {
-	color: var(--primary-color);
-}
 
 @media only screen and (max-width: 768px) {
 	.profile_container {
 		flex-direction: column;
 	}
-}
-
-/* Expertise */
-.skills_list {
-	margin-top: 1rem;
-	margin-left: 2rem;
-	line-height: 2;
 }
 
 /* eduction */
@@ -198,4 +182,3 @@ a {
 .social_item:hover {
 	color: var(--primary-color);
 }
-

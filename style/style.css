@@ -1,43 +1,69 @@
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
-
-/*--------------------------------------------------------------
-# Rent Details
---------------------------------------------------------------*/
-.rent {
-  margin: 10px 20% ;
+:root {
+  --light-blue-color: #00c8ff;
+  --lighter-blue-color: #5cdbfe;
 }
 
-.rent form label {
+.cv h2 {
+  width: fit-content;
+  margin: 10px auto 20px;
+  text-align: center;
+  border: 0.1vw solid var(--light-blue-color);
+  padding: 5px 20px;
+  color: #ffffff;
+  background-color: var(--light-blue-color);
+  transition: var(--tran-04);
+  border-radius: 1.8vw 0.5vw;
+  cursor: default;
+}
+
+h2::selection {
+  background-color: transparent;
+}
+
+h2:hover {
+  background-color: var(--light-blue-color);
+  color: white;
+  transition: var(--tran-04);
+}
+
+h3 {
+  color: var(--light-blue-color);
+}
+
+.cv {
+  margin: 10px 20%;
+}
+
+.cv form label {
   margin-bottom: 5px;
-  color: var(--color-secondary);
+  color: var(----lighter-blue-color);
 }
 
-.rent form input,
-.rent form select,
-.rent form textarea {
+.cv form input,
+.cv form select,
+.cv form textarea {
   margin-bottom: 35px;
-  /* width: 100%; */
 }
 
-.rent form textarea {
+.cv form textarea {
   resize: none;
 }
 
-.rent form button[type="submit"] {
+.cv form button[type="submit"] {
   border: none;
   outline: none;
   color: #fff;
   transition: 0.5s;
   font-size: 20px;
+  width: 200px;
   border-radius: 20.3vw;
+  display: inline-block;
   background-size: 200%;
   background-image: linear-gradient(to right, #5cdbfe, #8df5fb, #77a8b7);
-  width: 200px;
-  display: inline-block;
 }
