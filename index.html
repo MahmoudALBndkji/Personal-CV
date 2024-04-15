@@ -9,147 +9,138 @@
     content="A Simple CV template that contains an overview of me, in addition to links indicating my work and means of communication. There are also several sections such as my experiences, certificates, etc."
     name="description" />
   <meta content="Personal CV, personal cv, CV, cv, CV Form, form cv" name="keywords" />
-  <title>Cv Form</title>
+  <title>Fill Form Data</title>
   <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style/style.css">
-  <link rel="icon" type="image/x-icon" href="images/cv.png">
 </head>
 
 <body>
-  <div class="container">
-    <div class="profile">
-      <div class="profile_container">
-        <div class="profile_profileImg">
-          <img src="./images/profileImage.jpg" alt="Mahmoud AL-Bndkji">
-          <div class="social">
-            <div class="social_items">
-              <a href="https://mahmoudalbndkji.github.io/Portfolio/index.html" target="_blank" class="social_item">
-                <i class="bi bi-file-person" title="Portfolio"></i>
-                <span>Portfolio</span>
-              </a>
-              <a href="https://github.com/MahmoudALBndkji" target="_b" class="social_item">
-                <i class="bi bi-github" title="GitHub"></i>
-                <span>GitHub</span>
-              </a>
-              <a href="https://www.linkedin.com/in/mahmoud-al-bndkji-619a14241" target="_blank" class="social_item">
-                <i class="bi bi-linkedin" title="LinkedIn"></i>
-                <span>LinkedIn</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h1 class="profile_name">
-            <span class="profile_name_firstName">Mahmoud</span>
-            <span class="profile_name_lastName">AL-Bndkji</span>
-          </h1>
-          <p class="profile_title">Mobile Application Developer</p>
-          <p class="description profile_description">
-            A Software Engineer who graduated from the TCI in Damascus, I bring a wealth of experience and fluency in
-            multiple programming
-            languages and frameworks. My expertise spans Swift for iOS development, Kotlin for Android development, and
-            Dart for Flutter, allowing me to craft seamless cross-platform applications. I'm adept at leveraging
-            frameworks
-            like Flutter and Ionic to build dynamic, responsive, and user-friendly interfaces. My proficiency in these
-            technologies enables me to deliver high-quality, efficient, and scalable solutions across various platforms.
-          </p>
-        </div>
+  <main class="rent">
+    <h1>Enter Cv Data</h1>
+    <form action="cv_page.html" method="get">
+      <h3>Header Section</h3>
+      <div class="mb-3">
+        <label for="linkedInUrl" class="form-label" id="linkedInUrl">LinkedIn Url</label>
+        <input type="text" required class="form-control" id="linkedInUrl" placeholder="Enter Your linkedInUrl"
+          dir="auto" autocomplete="off" spellcheck="false" title="linkedInUrl" autocomplete="false" maxlength="30"
+          name="linkedInUrl" />
       </div>
-    </div>
-    <div class="group-1">
-      <div class="edu">
-        <h3 class="title">Education</h3>
-        <div class="edu_item">
-          <p class="item_preTitle">16/09/2020 - 20/09/2022</p>
-          <h4 class="item_title">Associate Degree TCI Software Engineering</h4>
-          <p class="item_subtitle">
-            Damascus University
-          </p>
-        </div>
-        <div class="edu_item">
-          <p class="item_preTitle">18/09/2022 – Current</p>
-          <h4 class="item_title">Bachelor's Degree in Computer Technologies</h4>
-          <p class="item_subtitle">
-            Damascus University
-          </p>
-        </div>
+      <div class="mb-3">
+        <label for="githubUrl" class="form-label" id="githubUrl">GitHub Url</label>
+        <input type="text" required class="form-control" id="githubUrl" placeholder="Enter Your githubUrl" dir="auto"
+          autocomplete="off" spellcheck="false" title="githubUrl" autocomplete="false" maxlength="30"
+          name="githubUrl" />
       </div>
-      <div class="certification">
-        <h3 class="title">certification</h3>
-        <div class="certification_item">
-          <p class="item_preTitle">Jan 2024</p>
-          <a href="https://www.udemy.com/certificate/UC-9f5e8ea0-011e-46df-a79b-0626dd518903/" target="_blank">
-            <h4 class="item_title">Google Maps Integration</h4>
-          </a>
-        </div>
-        <div class="certification_item">
-          <p class="item_preTitle">Sep 2023</p>
-          <a href="https://www.udemy.com/certificate/UC-f627bdb0-2bc5-4b1d-8b5d-f1db85225b4c/" target="_blank">
-            <h4 class="item_title">Deep Dive into Clean Architecture in Flutter</h4>
-          </a>
-        </div>
-        <div class="certification_item">
-          <p class="item_preTitle">Jan 2023</p>
-          <a href="https://www.udemy.com/certificate/UC-0b15557f-1994-49de-82b6-2c689b2505c1/" target="_blank">
-            <h4 class="item_title">The Complete 2022 Flutter & Dart Development Course</h4>
-          </a>
-        </div>
-      </div>
-      <div class="skills">
-        <h3 class="title">Expertise</h3>
-        <ul class="skills_list description">
-          <li>Flutter</li>
-          <li>Kotlin</li>
-          <li>Swift</li>
-          <li>Ionic</li>
-          <li>Xamarin</li>
-        </ul>
+      <div class="mb-3">
+        <label for="protofolioUrl" class="form-label" id="protofolioUrl">Protofolio Url</label>
+        <input type="text" required class="form-control" id="protofolioUrl" placeholder="Enter Your protofolioUrl"
+          dir="auto" autocomplete="off" spellcheck="false" title="protofolioUrl" autocomplete="false" maxlength="30"
+          name="protofolioUrl" />
       </div>
 
-    </div>
-    <div class="group-2">
-      <div class="exp">
-        <h3 class="title">Experience</h3>
-        <div class="exp_item">
-          <p class="item_preTitle">08/05/2023 – Current</p>
-          <h4 class="item_title">Gamma Tech</h4>
-          <p class="item_subtitle">Mobile Development Team Lead</p>
-          <p class=" description">
-            I am leading the development of high-quality, scalable, and
-            maintainable mobile applications using the Flutter framework. I am collaborating with the development team,
-            product managers, designers, and other stakeholders to understand project requirements and translate them
-            into technical specifications
-          </p>
-        </div>
-        <div class="exp_item">
-          <p class="item_preTitle">17/09/2023 – Current</p>
-          <h4 class="item_title">Victory Arch Group</h4>
-          <p class="item_subtitle">Mobile Application Developer</p>
-          <p class=" description">
-            I am leading the development of high-quality, scalable, and
-            maintainable mobile applications using the Flutter framework. I am collaborating with the development team,
-            product managers, designers, and other stakeholders to understand project requirements and translate them
-            into technical specifications
-          </p>
-        </div>
+      <div class="mb-3">
+        <label for="firstName" class="form-label" id="firstName">firstName</label>
+        <input type="text" required class="form-control" id="firstName" placeholder="Enter Your firstName" dir="auto"
+          autocomplete="off" spellcheck="false" title="firstName" autocomplete="false" maxlength="30"
+          name="firstName" />
       </div>
-      <div class="contact">
-        <h3 class="title">Contact</h3>
-        <div class="contact_info">
-          <p class="description">
-            Address : Syria (Damascus)
-          </p>
-          <p class="description">
-            Phone : (+963) 967140352
-          </p>
-          <p class="description">
-            Email : bndkjiprogrammer@gmail.com
-          </p>
-        </div>
+      <div class="mb-3">
+        <label for="lastName" class="form-label" id="lastName">lastName</label>
+        <input type="text" required class="form-control" id="lastName" placeholder="Enter Your lastName" dir="auto"
+          autocomplete="off" spellcheck="false" title="lastName" autocomplete="false" maxlength="30" name="lastName" />
       </div>
-    </div>
-  </div>
-  </div>
+      <div class="mb-3">
+        <label for="Position" class="form-label" id="lbPosition">Position</label>
+        <input type="Position" required class="form-control" id="position" placeholder="Enter Your Position" dir="auto"
+          autocomplete="off" spellcheck="false" title="Position" autocomplete="false" maxlength="50" name="position" />
+      </div>
+      <div class="mb-3">
+        <label for="AboutME" class="form-label" id="lbAboutME">About ME</label>
+        <textarea class="form-control" required id="aboutMe" placeholder="Write Summary About Me" rows="10" dir="auto"
+          autocomplete="off" spellcheck="false" title="About ME" autocomplete="false" name="aboutMe"
+          maxlength="1500"></textarea>
+      </div>
+      <h3>Education Section</h3>
+      <div class="mb-3">
+        <label for="schoolPeriod" class="form-label" id="schoolPeriod">School Period</label>
+        <input type="text" required class="form-control" id="schoolPeriod" placeholder="Enter Your School Period"
+          dir="auto" autocomplete="off" spellcheck="false" title="schoolPeriod" autocomplete="false" maxlength="30"
+          name="schoolPeriod" />
+      </div>
+      <div class="mb-3">
+        <label for="jurisdiction" class="form-label" id="jurisdiction">Jurisdiction</label>
+        <input type="text" required class="form-control" id="jurisdiction" placeholder="Enter Your Jurisdiction"
+          dir="auto" autocomplete="off" spellcheck="false" title="jurisdiction" autocomplete="false" maxlength="30"
+          name="jurisdiction" />
+      </div>
+      <div class="mb-3">
+        <label for="universityName" class="form-label" id="lbuniversityName">University Name</label>
+        <input type="universityName" required class="form-control" id="universityName"
+          placeholder="Enter Your UniversityName" dir="auto" autocomplete="off" spellcheck="false"
+          title="universityName" autocomplete="false" maxlength="50" name="universityName" />
+      </div>
+      <h3>Cerification Section</h3>
+      <div class="mb-3">
+        <label for="cerificationPeriod" class="form-label" id="cerificationPeriod">Cerification Period</label>
+        <input type="text" required class="form-control" id="cerificationPeriod"
+          placeholder="Enter Your Cerification Period" dir="auto" autocomplete="off" spellcheck="false"
+          title="cerificationPeriod" autocomplete="false" maxlength="30" name="cerificationPeriod" />
+      </div>
+      <div class="mb-3">
+        <label for="cerificationName" class="form-label" id="cerificationName">Cerification Name</label>
+        <input type="text" required class="form-control" id="cerificationName"
+          placeholder="Enter Your Cerification Name" dir="auto" autocomplete="off" spellcheck="false"
+          title="cerificationName" autocomplete="false" maxlength="30" name="cerificationName" />
+      </div>
+      <h3>Experience Section</h3>
+      <div class="mb-3">
+        <label for="workDuration" class="form-label" id="workDuration">Work Duration</label>
+        <input type="text" required class="form-control" id="workDuration" placeholder="Enter Your Work Duration"
+          dir="auto" autocomplete="off" spellcheck="false" title="workDuration" autocomplete="false" maxlength="30"
+          name="workDuration" />
+      </div>
+      <div class="mb-3">
+        <label for="companyName" class="form-label" id="companyName">Company Name</label>
+        <input type="text" required class="form-control" id="companyName" placeholder="Enter Your companyName"
+          dir="auto" autocomplete="off" spellcheck="false" title="companyName" autocomplete="false" maxlength="30"
+          name="companyName" />
+      </div>
+      <div class="mb-3">
+        <label for="workPosition" class="form-label" id="workPosition">Work Position</label>
+        <input type="workPosition" required class="form-control" id="workPosition" placeholder="Enter Your workPosition"
+          dir="auto" autocomplete="off" spellcheck="false" title="work Position" autocomplete="false" maxlength="50"
+          name="workPosition" />
+      </div>
+      <div class="mb-3">
+        <label for="descriptionWork" class="form-label" id="descriptionWork">Description Work</label>
+        <textarea class="form-control" required id="descriptionWork" placeholder="Write  Summary Description Work"
+          rows="10" dir="auto" autocomplete="off" spellcheck="false" title="Description Work" autocomplete="false"
+          name="descriptionWork" maxlength="1500"></textarea>
+      </div>
+      <h3>Contact Section</h3>
+      <div class="mb-3">
+        <label for="email" class="form-label" id="lbEmail">Email</label>
+        <input type="email" required class="form-control" id="email" placeholder="Enter Your Email" dir="auto"
+          autocomplete="off" spellcheck="false" title="Email" autocomplete="false" maxlength="50" name="email" />
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label" id="lbAddress">Address</label>
+        <input type="text" required class="form-control" id="address" placeholder="Enter Your Address" dir="auto"
+          autocomplete="off" spellcheck="false" title="Address" autocomplete="false" maxlength="50" name="address" />
+      </div>
+      <div class="mb-3">
+        <label for="Phone" class="form-label" id="lbPhone">Phone</label>
+        <input type="text" required class="form-control" id="phone" placeholder="Enter Your Phone" dir="auto"
+          autocomplete="off" spellcheck="false" title="Phone" autocomplete="false" maxlength="50" name="phone" />
+      </div>
+      <div class="col-md-12 mt-3 d-flex justify-content-center">
+        <button type="submit" class="btn btn-info" style="border-radius: 20px; color: white">
+          Send
+        </button>
+      </div>
+    </form>
+  </main>
 </body>
 
 </html>

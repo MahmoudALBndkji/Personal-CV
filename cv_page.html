@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    content="A Simple CV template that contains an overview of me, in addition to links indicating my work and means of communication. There are also several sections such as my experiences, certificates, etc."
+    name="description" />
+  <meta content="Personal CV, personal cv, CV, cv, CV Form, form cv" name="keywords" />
+  <title>Cv Form</title>
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style/cv_page_style.css">
+  <link rel="icon" type="image/x-icon" href="images/cv.png">
+</head>
+
+<body>
+  <div class="container">
+    <div class="profile">
+      <div class="profile_container">
+        <div class="profile_profileImg">
+          <div class="social">
+            <div class="social_items">
+              <a href="" target="_blank" class="social_item" id="protofolioUrl" name="protofolioUrl">
+                <i class="bi bi-file-person" title="Portfolio"></i>
+                <span>Portfolio</span>
+              </a>
+              <a href="" target="_blank" class="social_item" id="githubUrl" name="githubUrl">
+                <i class="bi bi-github" title="GitHub"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="" target="_blank" class="social_item" id="linkedInUrl" name="linkedInUrl">
+                <i class="bi bi-linkedin" title="linkedin"></i>
+                <span>Linkedin</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1 class="profile_name">
+            <span class="profile_name_firstName" id="firstName"></span>
+            <span class="profile_name_lastName" id="lastName"></span>
+          </h1>
+          <p class="profile_title" id="position"></p>
+          <p class="description profile_description" id="aboutMe">
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="group-1">
+      <div class="edu">
+        <h3 class="title">Education</h3>
+        <div class="edu_item">
+          <p class="item_preTitle" id="schoolPeriod"></p>
+          <h4 class="item_title" id="jurisdiction"></h4>
+          <p class="item_subtitle" id="universityName">
+          </p>
+        </div>
+      </div>
+      <div class="certification">
+        <h3 class="title">certification</h3>
+        <div class="certification_item">
+          <p class="item_preTitle" id="cerificationPeriod"></p>
+          <h4 class="item_title" id="cerificationName"></h4>
+        </div>
+      </div>
+
+    </div>
+    <div class="group-2">
+      <div class="exp">
+        <h3 class="title">Experience</h3>
+        <div class="exp_item">
+          <p class="item_preTitle" id="workDuration"></p>
+          <h4 class="item_title" id="companyName"></h4>
+          <p class="item_subtitle" id="workPosition"></p>
+          <p class="description" id="descriptionWork">
+          </p>
+        </div>
+        </p>
+      </div>
+    </div>
+    <div class="contact">
+      <h3 class="title">Contact</h3>
+      <div class="contact_info">
+        <p class="description" id="address">
+        </p>
+        <p class="description" id="phone">
+        </p>
+        <p class="description" id="email">
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    // Header Section
+    document.getElementById("linkedInUrl").href = urlParams.get("linkedInUrl");
+    document.getElementById("githubUrl").href = urlParams.get("githubUrl");
+    document.getElementById("protofolioUrl").href = urlParams.get("protofolioUrl");
+    document.getElementById("firstName").textContent = urlParams.get("firstName");
+    document.getElementById("lastName").textContent = urlParams.get("lastName");
+    document.getElementById("position").textContent = urlParams.get("position");
+    document.getElementById("aboutMe").textContent = urlParams.get("aboutMe");
+    // Education Section
+    document.getElementById("schoolPeriod").textContent = urlParams.get("schoolPeriod");
+    document.getElementById("jurisdiction").textContent = urlParams.get("jurisdiction");
+    document.getElementById("universityName").textContent = urlParams.get("universityName");
+    // Certificate Section
+    document.getElementById("cerificationPeriod").textContent = urlParams.get("cerificationPeriod");
+    document.getElementById("cerificationName").textContent = urlParams.get("cerificationName");
+    // ExperienceSection
+    document.getElementById("workDuration").textContent = urlParams.get("workDuration");
+    document.getElementById("companyName").textContent = urlParams.get("companyName");
+    document.getElementById("workPosition").textContent = urlParams.get("workPosition");
+    document.getElementById("descriptionWork").textContent = urlParams.get("descriptionWork");
+    // Contact Section
+    document.getElementById("email").textContent = urlParams.get("email");
+    document.getElementById("address").textContent = urlParams.get("address");
+    document.getElementById("phone").textContent = urlParams.get("phone");
+
+  </script>
+</body>
+
+</html>
